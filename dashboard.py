@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import pickle as pkl
 import sklearn
 
+# Memuat model random forest
 @st.cache_data()  # Menyimpan model di cache untuk performa
 def load_classification_model():
     with open('model_salary_rf.pkl', 'rb') as file:
